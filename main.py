@@ -6,7 +6,7 @@ print(tf.__version__)
 import sqlite3
 #-----------------------------------------------------#
 try:
-    mi_conexion=sqlite3.connect("database/database.db")
+    mi_conexion=sqlite3.connect("database.db")
     cursor=mi_conexion.cursor()
     cursor.execute("SELECT PH,FECHAREGISTRO FROM TBL_DATOS_SENSOR")
     rows=cursor.fetchall()
